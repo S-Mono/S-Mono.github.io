@@ -1,0 +1,318 @@
+/*------------------------------
+　ページ全体とヘッダ周り
+------------------------------*/
+
+#pageBody {
+    background: rgba(250,250,250, 1);;
+
+}
+
+.pageTitle {
+    width: fit-content;
+    font-size: 85px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(0,0,0, 0.3);
+}
+
+.pageSubTitle {
+    width: fit-content;
+    font-size: 50px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 50px;
+    background: rgba(0,0,0, 0.3);
+    
+}
+
+.headerContents {
+    color: rgba(265, 265, 265, 1);
+    background-image: url("images/20200916_154343.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.heading-title {
+    font-size: 50px;
+    width: 300px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.heading-caption {
+    font-size: 15px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+/*------------------------------
+　グローバルナビ装飾
+------------------------------*/
+.globalNavi {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    background: rgba(250,250,250, 1);
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.globalNavi li {
+    font-family: sans-serif;
+    font-size: 30px;
+    font: bold;
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: middle;
+    position: sticky;
+}
+
+.globalNavi li a{
+    color: rgba(0,0,0, 1);
+    display: flex;
+    text-decoration: none;
+    float: unset;
+    vertical-align: bottom;
+}
+
+/*------------------------------
+　Profile周りの装飾
+------------------------------*/
+.heading-icon-profile h1::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f2b9';
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px;
+}
+
+
+
+.img-profile { 
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 280px;
+    height: 400px;
+}
+
+.heading-1-wrapper {
+    width: 55%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+}
+
+
+#fixedDate {
+    float: right;
+}
+
+/*------------------------------
+　Works周りの装飾
+------------------------------*/
+.heading-icon-work h1::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0ad';
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.works-all {
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works-card{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    background-color:rgba(0,0,0, 0.07);
+    text-align: center;
+    max-width: 240px;
+    max-height: 400px;
+
+}
+
+.works-img{
+    z-index: 100;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.works-card figcaption {
+    display: inline-flexbox;
+    padding: 10px;
+}
+
+.github-link {
+    font-size: small;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+/*------------------------------
+　Skills周りの装飾
+------------------------------*/
+
+.heading-icon-skill h1::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f044';
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.heading-3-detail {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
+}
+
+.skill-icon-wrapper {
+    font-size: 60px;
+    flex: 0 0 60px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.skill-card {
+    display: flex;
+    flex: 0 0 46%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skill-card-body {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.rate {
+    position: relative;
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    letter-spacing: 3px;
+}
+
+.rate::before,
+.rate::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    content: "★★★★★";
+}
+
+.rate::before {
+    color: rgba(200, 200, 200, 1);
+}
+
+.rate::after {
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(240, 150, 0, 1);
+}
+
+.rate1::after {
+    width: 20px;
+}
+
+.rate2::after {
+    width: 40px;
+}
+
+.rate3::after {
+    width: 60px;
+}
+
+.rate4::after {
+    width: 80px;
+}
+
+.rate5::after {
+    width: 100px;
+}
+
+/*------------------------------
+　Contact周りの装飾
+------------------------------*/
+
+.heading-icon-contact h1::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0e0';
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.heading-icon-contact {
+    width: max-content;
+    margin: auto;
+}
+
+.contact-icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.contact-item {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    text-decoration: none;
+}
+
+.contact-name {
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+/*------------------------------
+　footer周りの装飾
+------------------------------*/
+.copyRight {
+    margin-top: 100px;
+    font-size: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.return-top {
+    width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.return-top a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
